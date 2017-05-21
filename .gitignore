@@ -42,3 +42,4 @@ Thumbs.db
 *.min.css
 *.min.js
 wwwroot/lib
+.vscode
