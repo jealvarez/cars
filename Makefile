@@ -10,10 +10,10 @@ dotnet-develop:
 # docker
 # -------------------
 docker-build:
-	git checkout tags/$(subst v, "", $(tag)) && \
+	git checkout tags/$(tag) && \
 	dotnet restore && \
 	dotnet publish -c release && \
-	docker build -t cars:$(tag) .
+	docker build -t cars:$(subst v, "", $(tag)) .
 
 docker-run:
 	docker run --rm -d --name cars -p 8000:8000 cars:$(tag)
