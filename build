@@ -4,3 +4,4 @@ set -ev
 
 dotnet restore
 dotnet build
+docker build -t dorefactor/cars .
