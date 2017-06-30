@@ -3,5 +3,5 @@
 set -ev
 
 dotnet restore
-dotnet build
+dotnet publish -c release
 docker build -t dorefactor/cars .
