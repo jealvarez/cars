@@ -8,6 +8,7 @@ services:
 script:
   - ./build
 after_success:
+  - docker build -t dorefactor/cars .
   - docker login -u="$DOCKER_USERNAME" -p="$DOCKER_PASSWORD"
   - docker push dorefactor/cars
 
