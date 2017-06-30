@@ -46,7 +46,7 @@ $ ssh root@nodea
 
 2. Download the repository into the home directory
 ```ssh
-$ git clone https://github.com/jealvarez/cars.git
+$ git clone https://github.com/jealvarez/cars-docker-swarm.git
 ```
 
 3. Build docker images
